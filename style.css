@@ -1,6 +1,3 @@
-* {
-    box-sizing: border-box;
-}
 
 body {
     /* font-family: Arial, sans-serif; */
@@ -72,11 +69,6 @@ body {
     color: white;
 }
 
-.fa-solid.fa-magnifying-glass {
-    align-items: right;
-    /* visibility: hidden; */
-}
-
 .fa-solid.fa-chevron-down {
     padding-left: 8px;
 }
@@ -90,12 +82,19 @@ body {
 .dropdown {
     display: none;
     background-color: white;
-    position: absolute;
+    position:absolute;
     min-width: 100px;
     box-shadow: 2px 2px 5px;
 }
 
 #Sports:hover .dropdown {
+    display: block;
+}
+
+.input{
+    padding-left: 20%;
+    padding-top: 13px;
+    padding-bottom: 13px;
     display: block;
 }
 
@@ -107,7 +106,7 @@ body {
 }
 
 .date {
-    padding-left: 70vh;
+    padding-left: 30%;
 }
 
 .date a {
@@ -141,7 +140,12 @@ main {
     width: 100%;
     height: auto;
 }
-
+/* #art1{
+    background-image: url(stock2.cms);
+    background-size: contain;
+    height: 100%;
+    padding-bottom: 10px;
+} */
 .article-info {
     padding: 15px;
 }
