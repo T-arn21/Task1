@@ -1,2 +1,2 @@
-# Task2
+# Coding Week tasks for WebD
 Blog Website

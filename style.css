@@ -1,0 +1,264 @@
+
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.logo .large {
+    font-size: 55px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(bg1.avif);
+    color: white;
+    padding: 10px 20px;
+}
+.news{
+    padding-left: 10px;
+    width: 500px;
+    display: inline-block;
+    animation-name: continuous;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes continuous {
+    to{transform: translateX(70%)}
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: white;
+    color: black;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a:hover {
+    background-color: hsl(0, 0%, 70%);
+}
+
+#current a {
+    background-color: black;
+    color: white;
+}
+
+.fa-solid.fa-chevron-down {
+    padding-left: 8px;
+}
+
+.dropdown a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown {
+    display: none;
+    background-color: white;
+    position:absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px;
+}
+
+#Sports:hover .dropdown {
+    display: block;
+}
+
+.input{
+    padding-left: 20%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: block;
+}
+
+.headline {
+    background-color: hsla(0, 100%, 87%, 0.858);
+    color: black;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+.date {
+    padding-left: 30%;
+}
+
+.date a {
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.featured-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    width: 48%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+}
+/* #art1{
+    background-image: url(stock2.cms);
+    background-size: contain;
+    height: 100%;
+    padding-bottom: 10px;
+} */
+.article-info {
+    padding: 15px;
+}
+
+.category {
+    display: block;
+    font-size: 14px;
+    color: #eee9e9;
+    text-transform: uppercase;
+    background-color: rgb(4, 5, 5);
+    width: fit-content;
+    border-radius: 5px;
+    float: left;
+    margin-right: 5px;
+    padding: 2.5px;
+}
+
+.article h2 {
+    height: 25px;
+    font-size: 18px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.article h2:hover {
+    height: fit-content;
+    cursor: pointer;
+    overflow: initial;
+}
+
+.article:hover {
+    background-color: #ddd;
+}
+
+.article-meta {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.article-meta i {
+    margin-right: 3px;
+}
+
+.sidebar {
+    width: 25%;
+    padding-left: 20px;
+}
+
+.latest-popular-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.tab a {
+    text-decoration: none;
+    color: black;
+}
+
+.tab.active {
+    background-color: #333;
+    color: white;
+}
+
+.tab-content {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sidebar-article {
+    margin-bottom: 20px;
+}
+
+.sidebar-article h3 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.sidebar-article .article-meta {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.sidebar-article img {
+    width: 30%;
+    float: left;
+    margin-right: 5px;
+}
+
+.sidebar-article:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
