@@ -34,3 +34,9 @@ window.onclick = function(event) {
         }
     }
 }
+function formatDate(date) {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
+    }
+
+    document.getElementById('live-date').textContent = formatDate(new Date());
